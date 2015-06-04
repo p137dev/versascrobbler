@@ -1,0 +1,33 @@
+<html>
+    
+    <head>
+        
+    </head>
+    
+    <body>
+    <h1 class="text-center">Scrobbler</h1>
+    
+    <div class="span7 text-center">
+      
+    <%= form_tag '/logfile_contents', method: :post, class: "dropzone", id: "logfile-dropzone" do %>
+      <div class="fallback">
+        <%= file_field_tag "logfile", multiple: false%>
+      </div>
+    <% end %>
+    
+    </div>
+
+    <script>
+       Dropzone.autoDiscover = false;
+      (function($) {
+        var $dropzone = $('.dropzone');
+        $dropzone.dropzone({
+          url: $dropzone.attr('action')
+        });
+      })(jQuery);
+    </script>
+    
+    </body>
+    
+</html>
+
