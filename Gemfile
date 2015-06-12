@@ -11,6 +11,7 @@ gem 'bootstrap-sass'
 gem 'carrierwave'
 gem 'dropzonejs-rails'
 gem 'turbolinks'
+gem 'carrierwave_backgrounder'
 
 group :doc do
     gem 'sdoc', '~> 0.4.0'
