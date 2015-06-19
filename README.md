@@ -1,1 +1,1 @@
-Versascrobbler build from Claire.
+Versascrobbler is a last.fm scrobbler for scrobbling last.fm logs from various MP3/MP4 players.

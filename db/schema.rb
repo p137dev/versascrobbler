@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150610101551) do
+ActiveRecord::Schema.define(version: 20150614132108) do
 
   create_table "logfiles", force: :cascade do |t|
     t.string   "logfile"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "logfile_tmp"
+    t.text     "status"
   end
 
 end

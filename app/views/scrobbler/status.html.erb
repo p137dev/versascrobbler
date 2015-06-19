@@ -1,0 +1,10 @@
+<div id="status"></div>
+ 
+<script type="text/javascript">
+  var $status = $('#status');
+  window.setInterval(function() {
+    $.get('/processing/<%= @file.id %>', function(data) {
+      $('#status').text(data.status);
+    });
+  }, 1000);
+</script>

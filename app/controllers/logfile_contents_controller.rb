@@ -1,4 +1,5 @@
 class LogfileContentsController < ApplicationController
+  
   def create
     @logfile = Logfile.new(logfile: params[:file])
     if @logfile.save!
@@ -7,4 +8,5 @@ class LogfileContentsController < ApplicationController
 	  end
     end
   end
+  
 end
